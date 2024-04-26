@@ -13,7 +13,7 @@
 
 ### 1.1 Định tuyến là gì?
 
-![hinh_1.4](/LinhNH/06.Timhieu_Routing/images/khaiquat.png)
+![hinh_1.4](/LinhNH/CCNA/06.Timhieu_Routing/images/khaiquat.png)
 
 
 - Định tuyến là phương thức mà router (bộ định tuyến) hay pc (thiết bị mạng) dùng để chuyển các gói tin đến địa chỉ đích một cách tốt nhất (nghĩa là chỉ ra hướng và đường đi tốt nhất cho gói tin).
@@ -54,7 +54,7 @@ Bộ định tuyến chuyển tiếp dữ liệu đến thiết bị tiếp theo
 
 ### 1.3 Hoạt động của định tuyến
 
-![hinh_1.3](/LinhNH/06.Timhieu_Routing/images/hoatdong.png)
+![hinh_1.3](/LinhNH/CCNA/06.Timhieu_Routing/images/hoatdong.png)
 
 
 - Khi gửi đi một gói dữ liệu từ một máy tính này sang một máy tính khác, đầu tiên quá trình sẽ xác định xem gói dữ liệu được gửi nội bộ đến máy tính khác trên cùng LAN hay đến Router để định tuyến đến LAN đích.
@@ -67,7 +67,7 @@ Bộ định tuyến chuyển tiếp dữ liệu đến thiết bị tiếp theo
 
 ### 1.4 Phân loại định tuyến
 
-![hinh_1.4](/LinhNH/06.Timhieu_Routing/images/phanloai.png)
+![hinh_1.4](/LinhNH/CCNA/06.Timhieu_Routing/images/phanloai.png)
 
 __Routing được chia làm 2 phương thức chính là Static Routing và Dynamic Routing.__
 
