@@ -2,7 +2,7 @@
 
 # 2. Cấu hình VLAN trên SW
 
-![hinh](/LinhNH/05.Timhieu_VLAN_Trunking/images/anh1.png)
+![hinh](/LinhNH/CCNA/05.Timhieu_VLAN_Trunking/images/anh1.png)
 
 
 Mặc định, thì tất cả các cổng (port) trên switch đều nằm trong cùng VLAN có ID là 1 (VLAN 1)
@@ -26,7 +26,7 @@ __Tạo các VLAN10, VLAN11, VLAN12__
 
 Kiểm tra lại VLAN vừa tạo:
 
-![hinh](/LinhNH/05.Timhieu_VLAN_Trunking/images/anh2.png)
+![hinh](/LinhNH/CCNA/05.Timhieu_VLAN_Trunking/images/anh2.png)
 
 3 VLAN đã được khởi tạo. Tuy nhiên, chưa có port nào được gán vào vlan.
 
@@ -63,19 +63,19 @@ Kiểm tra các port gán đúng vlan chưa
 
     Switch#show vlan
 
-![hinh](/LinhNH/05.Timhieu_VLAN_Trunking/images/anh3.png)
+![hinh](/LinhNH/CCNA/05.Timhieu_VLAN_Trunking/images/anh3.png)
 
 Kiểm tra ping từ các PC trong cùng VLAN -> OK  
 Ping giữa các VLAN khác nhau -> Không ping được.
 
-![hinh](/LinhNH/05.Timhieu_VLAN_Trunking/images/anh4.png)
+![hinh](/LinhNH/CCNA/05.Timhieu_VLAN_Trunking/images/anh4.png)
 
 
 # 3. Cấu hình VTP
 
 ## VTP config
 
-![hinh](/LinhNH/05.Timhieu_VLAN_Trunking/images/anh5.png)
+![hinh](/LinhNH/CCNA/05.Timhieu_VLAN_Trunking/images/anh5.png)
 
 Quy hoạch VLAN:
 
@@ -125,7 +125,7 @@ Gán các port vào đúng các VLAN định sẵn:
 
 Kiểm tra lại:
 
-![hinh](/LinhNH/05.Timhieu_VLAN_Trunking/images/anh6.png)
+![hinh](/LinhNH/CCNA/05.Timhieu_VLAN_Trunking/images/anh6.png)
 
 _Trên SW2_
 
@@ -161,7 +161,7 @@ Gán các port vào đúng các VLAN định sẵn:
     SW2(config)#exit
 Kiểm tra lại:
 
-![hinh](/LinhNH/05.Timhieu_VLAN_Trunking/images/anh7.png)
+![hinh](/LinhNH/CCNA/05.Timhieu_VLAN_Trunking/images/anh7.png)
 
 __Đặt IP cho các interface VLAN trên 2 SW__  
 Đặt các địa chỉ IP của SW1 cho VLAN10 và VLAN20:
@@ -241,4 +241,4 @@ Câu lệnh kiểm tra
 
     SW# show interfaces trunk 
 
-![hinh](/LinhNH/05.Timhieu_VLAN_Trunking/images/anh8.png)
+![hinh](/LinhNH/CCNA/05.Timhieu_VLAN_Trunking/images/anh8.png)
