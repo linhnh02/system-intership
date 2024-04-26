@@ -16,7 +16,7 @@
 
 ## 1. VLAN
 ### 1.1 Tìm hiểu khái quát về VLAN
-![hinh_1](/LinhNH/05.Timhieu_VLAN_Trunking/images/VLAN.png)
+![hinh_1](/LinhNH/CCNA/05.Timhieu_VLAN_Trunking/images/VLAN.png)
 - VLAN (Virtual Local Area Network) hay còn gọi là mạng LAN ảo. Mạng LAN ảo (VLAN) là một nhóm các máy tính được kết nối với cùng một mạng nhưng không ở gần nhau. Sử dụng VLAN cho phép sử dụng tài nguyên mạng hiệu quả hơn và có thể hữu ích khi có quá nhiều thiết bị cho một mạng. 
 - Một VLAN được định nghĩa là một nhóm logic các thiết bị mạng và được thiết lập dựa trên các yếu tố như chức năng, bộ phận, ứng dụng… của công ty. Về mặt kỹ thuật, VLAN là một miền quảng bá được tạo bởi các switch. Bình thường thì router đóng vai trò tạo ra miền quảng bá. Đối với VLAN, switch có thể tạo ra miền quảng bá.  
 
@@ -40,7 +40,7 @@ Cách cấu hình này ít được sử dụng do có nhiều bất tiện tron
 Cách cấu hình này gần giống như MAC Address based, nhưng sử dụng một địa chỉ logic hay địa chỉ IP thay thế cho địa chỉ MAC. Cách cấu hình không còn thông dụng nhờ sử dụng giao thức DHCP.
 
 ### 1.3. Cách thức hoạt động  
-![hinh_3](/LinhNH/05.Timhieu_VLAN_Trunking/images/cach-hoat-dong.png)
+![hinh_3](/LinhNH/CCNA/05.Timhieu_VLAN_Trunking/images/cach-hoat-dong.png)
 
 Một VLAN được xác định trên các switch bằng một ID VLAN. Mỗi cổng trên một switch sẽ được gán cho một hoặc nhiều VLAN ID, trường hợp không được chỉ định thì nó sẽ được chuyển tới một VLAN mặc định. Mỗi VLAN sẽ cung cấp quyền truy cập dữ liệu cho tất cả những thiết bị kết nối với cổng trên switch phù hợp với VLAN ID của nó.
 
@@ -59,11 +59,11 @@ Spanning Tree Protocol ( STP )là một giao thức được dùng để ngăn c
 
 > a. IEEE 802.1Q  
 
-![hinh_2a](/LinhNH/05.Timhieu_VLAN_Trunking/images/chuan-dot1q.png)
+![hinh_2a](/LinhNH/CCNA/05.Timhieu_VLAN_Trunking/images/chuan-dot1q.png)
 ___`HOẠT ĐỘNG`___  
 Khi switch nhận được Frame có tag thông tin 802.1Q, nó sẽ tiến hành đọc thông tin này, xem frame này đến từ VLAN nào. Sau đó  xử lí gở bỏ Tag trả lại frame đúng VLAN mà frame thuộc về. Thực chất Tag DOT1Q chỉ được tag trên đường trunk để phân biệt các frame của các VLAN khác nhau. Các End users không nhận biết được rằng frame được Tag và chuyển trên đường trunk. Trunking hoàn toàn riêng biệt với các thiết bị đầu cuối này.
 
-![hinh_2b](/LinhNH/05.Timhieu_VLAN_Trunking/images/chuan-isl.png)
+![hinh_2b](/LinhNH/CCNA/05.Timhieu_VLAN_Trunking/images/chuan-isl.png)
 ___`ISL Header`___   
 Header của ISL có chứa nhiều trường với các giá trị xác định thuộc tính của dữ liệu frame nguồn. Thông tin này được sử dụng để giao nhận, nhận dạng đường truyền, và nhận dạng VLAN. Độ lớn của các trường trong header ISL khác nhau, tùy thuộc vào loại VLAN và loại đường liên kết. Các ASIC trên một cổng Ethernet đóng gói các frame với một header ISL 26 byte và một FCS 4 byte. Đây là 30-byte mà ISL đóng gói bổ sung thêm đã được hỗ trợ trong giao thức của Switch Cisco, nhưng kích thước tổng thể của frame thay đổi và được giới hạn bởi các MTU của giao thức lớp 2. 
 
@@ -73,7 +73,7 @@ Header của ISL có chứa nhiều trường với các giá trị xác định
 `Khái niệm` 
 Router (thiết bị định tuyến hoặc bộ định tuyến) là thiết bị mạng dùng để chuyển đổi các gói dữ liệu đến các thiết bị đầu cuối. Về cơ bản, router là một thiết bị để chia sẻ internet tới nhiều các thiết bị khác trong cùng lớp mạng.
 
-![hinh_3.1](/LinhNH/05.Timhieu_VLAN_Trunking/images/cautao-router-wifi.png)
+![hinh_3.1](/LinhNH/CCNA/05.Timhieu_VLAN_Trunking/images/cautao-router-wifi.png)
 
 `Cấu tạo`  
 - Cổng mạng LAN   
@@ -99,7 +99,7 @@ Router có chức năng gửi các gói dữ liệu mạng giữa 2 hoặc nhi�
 `Khái quát`  
 Switch hay switch mạng là thiết bị chuyển mạch hay bộ chuyển mạch. Đây là một thiết bị chuyển mạch vô cùng quan trong hệ thống mạng có khả năng kết nối các đoạn mạch với nhau theo mô hình sao (Star), giúp gửi nhận thông tin và tài nguyên 1 cách hiệu quả, trơn tru, bảo mật cao. 
 
-![hinh_3.2](/LinhNH/05.Timhieu_VLAN_Trunking/images/switch.png)
+![hinh_3.2](/LinhNH/CCNA/05.Timhieu_VLAN_Trunking/images/switch.png)
 Hiểu một cách đơn giản nhất thì switch giống như một thiết bị trung tâm, tất cả các thiết bị đầu cuối End sử dụng mạng khác nằm trong cùng 1 hệ thống mạng với switch như: máy tính, máy quét, máy in,... đều được kết nối với thiết bị này để có thể giao tiếp, truyền nhận dữ liệu.
 
 Switch là thiết bị mạng chính của nhiều hệ thống mạng doanh nghiệp, giúp kết nối nhiều thiết bị đầu cuối như máy tính, máy in, điện thoại, đèn, máy chủ server và phần cứng khác.  
@@ -121,13 +121,13 @@ Hơn nữa, hoạt động của switch layer 3 không những sở hữu các t
 - Có thể lưu bảng của địa chỉ MAC của thiết bị kết nối.
 - Có thêm bảng định tuyến của một Router.
 
-![hinh_3.2.1](/LinhNH/05.Timhieu_VLAN_Trunking/images/switch-layer-2-3.png)
+![hinh_3.2.1](/LinhNH/CCNA/05.Timhieu_VLAN_Trunking/images/switch-layer-2-3.png)
 
 ### 3.3 Firewall
 `Khái quát`  
 FireWall là một kỹ thuật được tích hợp vào hệ thống mạng để chống lại sự truy cập trái phép nhằm bảo vệ các nguồn thông tin nội bộ cũng như hạn chế sự xâm nhập vào hệ thông của một số thông tin khác không mong muốn.
 
-![hinh](/LinhNH/05.Timhieu_VLAN_Trunking/images/firewall.png)
+![hinh](/LinhNH/CCNA/05.Timhieu_VLAN_Trunking/images/firewall.png)
 
 
 Internet FireWall là một tập hợp thiết bị (bao gồm phần cứng và phần mềm) giữa mạng của một tổ chức, một công ty, hay một quốc gia và Internet.
