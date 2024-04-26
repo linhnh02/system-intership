@@ -18,7 +18,7 @@
 9. [Tìm hiểu về subnet, subnet mask, prefix](#9-tìm-hiểu-về-subnet-subnet-mask-prefix)
 10. [Thực hành chia mạng](#10-thực-hành-chia-mạng-ip)
 ## 1. Khái quát về IPv4
-![hinh_1](/LinhNH/04.TimhieuIpV4/images/ipv4.png)
+![hinh_1](/LinhNH/CCNA/04.TimhieuIpV4/images/ipv4.png)
 - **`Địa chỉ IPv4`** (Internet Protocol version 4) được phát triển vào những năm 1970 và trở thành mạng lưới đầu tiên kết nối tất cả các máy tính trên toàn thế giới. Là một địa chỉ duy nhất được sử dụng để xác định một thiết bị trong mạng Internet.
 - **`IPv4`** được ứng dụng trong các hệ thống chuyển mạch gói. Vai trò của nó là định hướng dữ liệu truyền đi. Khi truyền đi các gói tin, giao thức này chỉ đảm bảo phần truyền tải mà không để ý đến thứ tự truyền gói tin hoặc vấn đề gói tin có đến đích hay không, có lặp lại ở máy đích hay không. 
 ## 2. Tại sao chỉ có IPv4 mà không có IPv1, v2, v3, v5
@@ -36,7 +36,8 @@ IPv4 là phiên bản đầu tiên và phổ biến nhất của giao thức Int
 _Tóm lại, việc chỉ có IPv4 như là một phiên bản chính thức đầu tiên của giao thức IP là kết quả của quá trình phát triển và tiến hóa của Internet Protocol trong suốt thời gian._
 ## 3. Cấu trúc của  IPv4
 Về cấu tạo, **địa chỉ IPv4** sẽ có 32 bit và được biểu diễn dưới dạng 4 khối, mỗi khối chứa 8 bit, được ngăn cách bằng dấu (.) và được biểu diễn thành một dãy số nhị phân. Mỗi khối khối như vậy sẽ được gọi là một _octet_.
-![hinh_3](/LinhNH/04.TimhieuIpV4/images/cautruc.png)
+
+![hinh_3](/LinhNH/CCNA/04.TimhieuIpV4/images/cautruc.png)
 ## 4. Các thành phần của IPv4
 ### 4.1 Địa chỉ mạng
 **Địa chỉ mạng** (Network Address): Phần này đại diện cho mạng mà thiết bị đang kết nối tới. Đây là phần chung cho tất cả các thiết bị trong cùng một mạng. Trong một mạng lớn hơn, các số đầu tiên trong địa chỉ IPv4 sẽ thường được giữ nguyên để đại diện cho mạng đó. Ví dụ: Trong địa chỉ 192.168.1.1, "192.168.1" là địa chỉ mạng.
@@ -46,7 +47,7 @@ Về cấu tạo, **địa chỉ IPv4** sẽ có 32 bit và được biểu di�
 Trong địa chỉ IPv4, các lớp chính xác phân biệt và định rõ phạm vi và mục đích của mỗi địa chỉ IP. Cụ thể, có ba lớp chính (A, B, C) và 2 lớp phụ (D, E)
 ### 5.1 Lớp A
 
-![hinh_5.1](/LinhNH/04.TimhieuIpV4/images/lopA.png)
+![hinh_5.1](/LinhNH/CCNA/04.TimhieuIpV4/images/lopA.png)
 
 Địa chỉ lớp A có phần mạng là 8 bit đầu và phần host là 24 bit sau. Bit đầu tiên của phần mạng luôn là 0.
 Lớp A sẽ có các địa chỉ mạng từ 1.0.0.0 đến 126.0.0.0 và mỗi mạng sẽ có 224 địa chỉ host (loại trừ địa chỉ mạng và địa chỉ broadcast).  
@@ -54,14 +55,14 @@ Mạng loopback sẽ là 127.0.0.0.
 
 ### 5.2 Lớp B
 
-![hinh_5.2](/LinhNH/04.TimhieuIpV4/images/lopB.png)
+![hinh_5.2](/LinhNH/CCNA/04.TimhieuIpV4/images/lopB.png)
 
 Địa chỉ lớp B có phần mạng là 16 bit đầu và phần host là 16 bit sau. 2 bit đầu tiên của phần mạng luôn là 1.0.
 Lớp B sẽ có các địa chỉ mạng từ 128.0.0.0 đến 191.255.0.0 và mỗi mạng sẽ có 214 địa chỉ host (loại trừ địa chỉ mạng và địa chỉ broadcast).
 
 ### 5.3 Lớp C
 
-![hinh_5.3](/LinhNH/04.TimhieuIpV4/images/lopC.png)
+![hinh_5.3](/LinhNH/CCNA/04.TimhieuIpV4/images/lopC.png)
 
 Địa chỉ lớp C có phần mạng là 24 bit đầu và phần host là 8 bit sau. 3 bit đầu tiên của phần mạng luôn là 1.1.0.
 Lớp C sẽ có các địa chỉ mạng từ 192.0.0.0 đến 223.255.255.0 và mỗi mạng sẽ có 26 địa chỉ host (loại trừ địa chỉ mạng và địa chỉ broadcast).
@@ -80,7 +81,8 @@ Các địa chỉ trong lớp E có vai trò dùng để dự phòng, bao gồm 
 
 ## 6. Phân biệt ip Public - ip Private
 - Địa chỉ IP được phân thành hai loại: private và public.
-![hinh_6](/LinhNH/04.TimhieuIpV4/images/ip_public_private.png)
+
+![hinh_6](/LinhNH/CCNA/04.TimhieuIpV4/images/ip_public_private.png)
 
   - Private: chỉ được sử dụng trong mạng nội bộ (mạng LAN), không được định tuyến trên môi trường Internet. Có thể được sử dụng lặp đi lặp lại trong các mạng LAN khác nhau.
   - Public: là địa chỉ IP sử dụng cho các gói tin đi trên môi trường Internet, được định tuyến trên môi trường Internet, không sử dụng trong mạng LAN. Địa chỉ public phải là duy nhất cho mỗi host tham gia vào Internet. 
@@ -92,7 +94,7 @@ Lớp C: 192.168.x.x
 - Ý nghĩa của địa chỉ private: được sử dụng để bảo tồn địa chỉ IP public đang dần cạn kiệt.
 ## 7. Cách chia địa chỉ IPv4
 ## 8. Phân biệt multicast - broadcast
-![hinh_8](/LinhNH/04.TimhieuIpV4/images/broadcast-multicast.png)
+![hinh_8](/LinhNH/CCNA/04.TimhieuIpV4/images/broadcast-multicast.png)
 
 |Tính năng | Multicast |Broadcast|
 |---|----------------|----|
@@ -407,7 +409,7 @@ Với m: số bit host, n: số bit mượn. Ta được m = 3 và n = 5. Vậy 
 Với m: số bit host, n: số bit mượn Ta được m = 2 và n = 6 là tối ưu hơn cả, đảm bảo không bị dư địa chỉ.. Vậy ta mượn 6 bit, mạng 172.16.5.0/24 được chia thành 2^6 = 64 mạng 172.16.5.0/30, 172.16.5.4/30, 172.16.5.8/30,…, 172.16.5.248/30, 172.16.252.0/30 . Tuy nhiên các dải địa chỉ của các mạng 172.16.5.0/30 ,…, 172.16.5.222/30 đã được giành cho mạng 78 host, mạng 50 host và mạng 20 host. Do đó ta chỉ có thể lấy từ mạng 172.16.5.248/30 để gán cho các mạng 2 host. Ở đây ta lấy mạng 172.16.5.248/30 và 172.16.5.252/30 gán cho hai liên kết serial.   
 _Ta có kết quả như sau :_
 
-![hinh_5.3](/LinhNH/04.TimhieuIpV4/images/chiamang.png)
+![hinh_5.3](/LinhNH/CCNA/04.TimhieuIpV4/images/chiamang.png)
 
 
 > Bài tập 4.6.3
