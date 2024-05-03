@@ -52,7 +52,9 @@ Distro Linux (Linux Distribution) là một bản phân phối của hệ điề
 Hiện tại, có khoảng 600 bản distro tồn tại, với gần 500 trong số đó phát triển tích cực, liên tục được sửa đổi và cải thiện. Bởi sự sẵn có của số lượng lớn phần mềm, distro khá là đa dạng về hình thức - phù hợp với từ desktop, server, laptop, netbooks, điện thoại di động, máy tính bảng cũng như môi trường tối thiếu thường để sử dụng trong các hệ thống nhúng.
 
 - Một số loại distro phổ biến:
+![hinhanh4](/LinhNH/Linux/01.Timhieu_Linux/images/ubuntu.png)
     - ___Ubuntu___ hiện tại đang làm một bản phân phối vô cùng hiện đại và được nhiều người dùng biết tới. Mục tiêu của nó đó chính là đem đến cho người dùng những trải nghiệm tốt nhất ngay trên máy chủ và máy tính. Hiện tại Ubuntu đã được cải tiến để phù hợp với tất cả yêu cầu của người dùng. Nhưng nó vẫn không làm mất đi những bản sắc riêng của bản thân. Ubuntu: là một trong những distro Linux phổ biến nhất, có giao diện đồ họa dễ sử dụng và cung cấp nhiều ứng dụng miễn phí.
+
     - ___Debian___ đang là 1 hệ điều hành gồm có những phần mềm mã nguồn mở hoàn toàn miễn phí và hiện tại vẫn luôn được nhóm cộng đồng lập trình viên vô cùng yêu thích. Dù phát hành những phiên bản mới thường xuyên tuy nhiên Debian có một nhược điểm đó chính là cập nhật khá chậm so với những bản phân phối khác.
     - ___Fedora___ đang là một phần mềm khá phổ biến và tập trung chủ yếu vào những phần mềm miễn phí vì vậy người dùng khi sử dụng thường xuyên gặp những khó khăn liên quan tới quá trình cài đặt những trình điều khiển về đồ họa độc quyền. Phiên bản này ở thời điểm hiện tại vẫn không ngừng được phát triển và cải tiến thêm.
     - ___Red Hat Enterprise Linux___ (RHEL) đây là nền tảng thương mại phổ biến, có hai phiên bản là RHEL (hỗ trợ 2CPU) và RHELAP (không giới hạn CPU). Red Hat được sử dụng bởi các cơ quan, tổ chức. Red Hat và các distro dựa trên nó dùng chương trình quản lý gói có tên là RPM (Red Hat Package Management).
