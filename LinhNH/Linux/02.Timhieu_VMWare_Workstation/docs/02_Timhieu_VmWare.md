@@ -52,7 +52,22 @@ Cơ chế Host-only: máy ảo được kết nối với VMnet có tính năng 
 - Card Host-only không thể giao tiếp với mạng vật lý mà máy tính thật đang kết nối.  
 
 ## 4. Sử dụng chế độ mạng NAT cho các máy ảo để truy cập internet
+- Tạo máy ảo cài đặt chế độ mạng NAT
+- Cấu hình ip máy ảo   
+  Bước 1: Vào sudo -i  
+Bước 2: Gõ câu lệnh nano /etc/netplan/00-installer-config.yaml
 
+Cấu hình như bên dưới
+![anh](/LinhNH/Linux/02.Timhieu_VMWare_Workstation/images/cauhinh.png) 
+
+
+- Kiểm tra ip máy ảo
+
+![anh](/LinhNH/Linux/02.Timhieu_VMWare_Workstation/images/ip-nat.png) 
+
+- Thực hiện ping ra internet
+
+![anh](/LinhNH/Linux/02.Timhieu_VMWare_Workstation/images/ping-internet.png) 
 ## 5. Sử dụng chế độ card Host-only để 2 máy ảo kết nối với nhau
 
 - Tạo 2 máy ảo khác nhau trên VMware 
