@@ -9,6 +9,7 @@
 
        linhnh@linhnh: ~$ sudo -i
        root@linhnh:~# nano /etc/netplan/00-installer-config.yaml
+       
 - Cấu hình như bên dưới 
 
 ![hinhanh4](/LinhNH/Linux/01.Timhieu_Linux/images/cauhinh1.png)  
@@ -21,6 +22,7 @@ Reboot hệ thống để IP được nhận
 
 ### Kiểm tra kết nối mạng
 - Kiểm tra lại IP đã đặt ở trên 
+
 ![hinhanh4](/LinhNH/Linux/01.Timhieu_Linux/images/ip-may-ao.png)  
 
 
@@ -29,4 +31,5 @@ Reboot hệ thống để IP được nhận
         ping 8.8.8.8
 
 - Kết quả 
+
 ![hinhanh4](/LinhNH/Linux/01.Timhieu_Linux/images/ping.png)  
