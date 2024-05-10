@@ -4,16 +4,6 @@
 
 ## 1. Cài đặt VM Ware Workstation
 
-B1: Truy cập vào đây để tải file cài đặt về máy
-
-B2: Nhấn đúp chuột vào file vừa tải để bắt đầu cài đặt
-
-B3: Chọn Next để tiếp tục cài đặt
-
-B4: Đánh dấu tick vào mục I accept the terms in the License Agreement -> chọn Next
-
-B5: 
-
 ## 2. Tạo máy ảo trên VMware
 
 ### 2.1 CentOS-7 Minimal
