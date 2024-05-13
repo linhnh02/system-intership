@@ -31,3 +31,24 @@ Những file định nghĩa thông tin users:
 - /etc/group: chứa thông tin group.
 
 Cấu trúc file /etc/passwd
+------------
+Cấp quyền cho user và group
+Ta dùng lệnh chmod
+
+Để có quyền đọc viết hoặc chỉnh sửa một file thì mỗi user cần được user root cấp quyền cho mới có thể thự thi được
+
+Quyền đọc: r = 4
+
+Quyền Viết: w = 2
+
+Quyền thực thi: x = 1
+
+Kí tự - đầu tiên là một cờ đặc biệt để chỉ loại file, - với file thông thường, d với thư mục, c với thiết bị, l với liên kết (liên kết tới một file khác).
+
+o+rws: cho phép user sở hữu có full quyền
+
+g+rw: cho phép group sở hữu có quyền đọc và ghi
+
+u+w: cho phép các user còn lại có quyền đọc
+
+a+rws: cho phép toàn bộ user có full quyền (777)
