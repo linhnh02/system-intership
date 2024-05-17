@@ -7,8 +7,7 @@ Dùng để chuyển vị trí làm việc sang thư mục khác .
 - **`cd root/snap/`** : Chuyển đến thư mục /snap (đường dẫn tuyệt đối)
 - **`cd check1`** : Chuyển đến thư mục check1 là thư mục con của thư mục hiện hành (đường dẫn tương đối)
 - **`cd ..`** : Chuyển đến thư mục cha
-- **`cd`** = **`cd ~`** : Chuyển đến thư mục home của user hiện tại
-- **`cd -`** : Chuyển đến thư mục mình vừa rời đi trước đó
+- **`cd`** = **`cd ~`** : Chuyển đến thư mục home của user hiện tại / quay lại thư mục trước
 
 ![anh](/LinhNH/Linux/01.Timhieu_Linux/images/change_directory.png)  
 
