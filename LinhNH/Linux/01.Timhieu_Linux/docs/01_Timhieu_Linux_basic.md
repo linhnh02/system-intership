@@ -174,8 +174,32 @@ Giấy phép mã nguồn mở do một số công ty, tổ chức lập ra để
 Mục đích sử dụng là để đảm bảo rằng các phần mềm, mã nguồn có sử dụng giấy phép này luôn là mã nguồn mở, phù hợp với OSD.
 
 Phân loại: 
-- Những giấy phép không quy định bất kì sự hạn chế nào trong việc sử dụng mã nguồn (Giấy phép không bảo hộ): chúng không bảo vệ mã nguồn mở khỏi việc bị sử dụng trong các phần mềm không phải là mã nguồn mở.
-- Những giấy phép quy định các hạn chế trong việc sử dụng mã nguồn (Giấy phép bảo hộ): chúng bảo đảm rằng các mã nguồn mở khi được sử dụng trong bất cứ tình huống nào sẽ vẫn được công khai/miễn phí.
+- Những giấy phép không quy định bất kì sự hạn chế nào trong việc sử dụng mã nguồn (Giấy phép không bảo hộ): chúng không bảo vệ mã nguồn mở khỏi việc bị sử dụng trong các phần mềm không phải là mã nguồn mở
+  - Người giữ bản quyền mã nguồn sẽ giữ lại bản quyền của họ đối với mã nguồn, và cấp cho người được cấp bản quyền (có thể hiểu là người sử dụng sản phẩm, mã nguồn) tất cả các quyền thuộc về bản quyền của mã nguồn đó. 
+  - Còn gọi là ___Non-copyleft.___
+- Những giấy phép quy định các hạn chế trong việc sử dụng mã nguồn (Giấy phép bảo hộ): chúng bảo đảm rằng các mã nguồn mở khi được sử dụng trong bất cứ tình huống nào sẽ vẫn được công khai/miễn phí 
+  - Người giữ bản quyền mã nguồn giữ lại bản quyền của họ đối với mã nguồn, và cấp cho người được cấp bản quyền tất cả các quyền thuộc về bản quyền của mã nguồn đó, nhưng có ít nhất một điều kiện, thông thường là việc phân phối lại phần mềm/mã nguồn đó, dù đã được sửa đổi hay chưa, đều phải sử dụng cùng loại giấy phép ban đầu.
 
-Một số giấy phép mã nguồn mở phổ biến:
-- Giấy phép công cộng GNU (General Public License GPL) là giấy phép phần mềm tự do phổ biến nhất.
+  - Còn gọi là ___Copyleft.___
+
+Mốt số Licenses phổ biến:
+1. Apache License 2.0
+2. BSD 3-Clause “New” or “Revised” license
+3. BSD 2-Clause “Simplified” or “FreeBSD” license
+4. GNU General Public License (GPL)
+5. GNU Library or “Lesser” General Public License (LGPL)
+6. MIT license
+7. Mozilla Public License 2.0
+8. Sun Industry Standards Source License
+
+### GNU
+
+- Giấy phép công cộng GNU (General Public License GPL) - đây là giấy phép phần mềm tự do được sử dụng rộng rãi, đảo bảo cho người dùng tự do chạy hoạt động, nghiên cứu, sửa đổi và chia sẻ phần mềm.
+- GPL là giấy phép copyleft
+- Phiên bản hiện hành của giấy phép này là phiên bản 3 năm 2007 (GPL v3), phiên bản được sử dụng nhiều nhất hiện nay là phiên bản 2 năm 1991.
+- Phần mềm GPL phải là phần mềm tự do. người dùng có quyền sử dụng các đặc tính sau: 
+  - Tự do chạy chương trình cho bất cứ mục đích nào.
+  - Tự do tìm hiểu cách hoạt động của chương trình, sửa đổi
+  - Tự do tái phân phối bản sao
+  - Tự do cải tiến chương trình và phát hành
+- Một số phần mềm sử dụng giấy phép GNU nổi bật: RedHat Enterprise Linux, Ubuntu, GIMP, Drupal, WordPress, Joomla…
