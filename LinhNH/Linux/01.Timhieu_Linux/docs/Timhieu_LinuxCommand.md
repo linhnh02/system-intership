@@ -1,4 +1,5 @@
 # Tìm hiểu 1 số lệnh cơ bản trong Linux
+
 ## 1. Lệnh cd (change directory)
 Dùng để chuyển vị trí làm việc sang thư mục khác .
 
@@ -96,3 +97,60 @@ _Tạo thư mục_
 
 ![anh](/LinhNH/Linux/01.Timhieu_Linux/images/mkdir.png)
    
+    # mkdir -v Tên_thư_mục 
+    // Tạo thư mục và hiển thị thông báo tạo thự mục
+
+![anh](/LinhNH/Linux/01.Timhieu_Linux/images/mkdir-v.png)
+
+
+## 6. Lệnh rmdir (remove directory)
+_Xóa thư mục_ (Chỉ cho phép xóa thư mục rỗng)
+
+    # rmdir Tên_thư_mục
+
+![anh](/LinhNH/Linux/01.Timhieu_Linux/images/rmdir.png)
+   
+## 7. Lệnh touch
+_Tạo file mới trống thông qua dòng lệnh_
+
+    # touch Tên_file
+
+![anh](/LinhNH/Linux/01.Timhieu_Linux/images/touch.png)
+
+## 8. Sao chép thư mục, tệp in 
+### 8.1. Copy nội dung 1 file vào file khác
+    # cp Tên_File_Nguồn Tên_Thư_Mục_Đích
+    // Tên tệp sao chép và tệp muốn sao chép (source_file và target_file) phải khác nhau để không bị lưu đè
+
+![anh](/LinhNH/Linux/01.Timhieu_Linux/images/cp.png)
+
+### 8.2 Copy file vào thư mục khác
+    # cp Tên_file Tên_thư_mục
+
+![anh](/LinhNH/Linux/01.Timhieu_Linux/images/8.2.png)
+
+### 8.3 Thông báo có muốn ghi đè nội dung tập tin hay không
+    # cp -i test1.txt test2.txt
+    -- i: inteactive (tương tác)
+    // Sử dụng tùy chọn -i để nhận được thông báo xác nhận trước khi ghi đè các tệp.       
+
+![anh](/LinhNH/Linux/01.Timhieu_Linux/images/copy-file.png)
+
+### 8.4 Xem quá trình sao chép file
+    # cp -v Filename1 Filename2
+    // -v -verbose (xem quá trình)
+
+![anh](/LinhNH/Linux/01.Timhieu_Linux/images/8.4.png)
+
+## 9. Lệnh mv: di chuyển file và thư mục
+
+    # mv [OPTIONS] SOURCE DESTINATION
+
+Để di chuyển text1 từ thư mục làm việc hiện tại hiện tại sang thư mục /text2 thì bạn sẽ chạy lệnh sau: 
+    # mv text1 / text2
+
+Cú pháp để di chuyển thư mục cũng giống như khi di chuyển file. Trong ví dụ sau, nếu thư mục text3 tồn tại thì lệnh sẽ chuyển text2 vào bên trong text3. Nếu text3 không tồn tại, text2 sẽ được đổi tên thành text3:
+
+    # mv text2 text3
+
+![anh](/LinhNH/Linux/01.Timhieu_Linux/images/mv.png)

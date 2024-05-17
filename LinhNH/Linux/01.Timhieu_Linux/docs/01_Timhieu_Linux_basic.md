@@ -164,3 +164,18 @@ Hiện tại, có khoảng 600 bản distro tồn tại, với gần 500 trong s
     ![hinhanh4](/LinhNH/Linux/01.Timhieu_Linux/images/centos.png)  
 
     - ___CentOS___ dựa theo Red Hat Enterprise Linux, dành cho ai muốn sử dụng Red Hat mà kông phải trả phí hỗ trợ để sử dụng nó. Nó cũng dùng trình quản lý gói RPM và các công cụ quản trị tương tự Red Hat.
+
+## 7. Tìm hiểu về mã nguồn mở Linux 
+
+___Giấy phép mã nguồn mở:___ là các giấy phép bản quyền dành cho các phần mềm máy tính trong đó đặt ra các quy định buộc người sử dụng phần mềm đó phải tuân theo. Giấy phép mã nguồn mở được sử dụng cho các phần mềm nguồn mở.
+
+Giấy phép mã nguồn mở do một số công ty, tổ chức lập ra để quy định về trách nhiệm của người sử dụng đối với một phần mềm/mã nguồn mở. Hiện tại, tổ chức Open Source Initiative (OSI) là người đưa ra định nghĩa về mã nguồn mở - [OSD](https://opensource.org/osd) được cộng đồng công nhận rộng rãi. Các giấy phép mã nguồn mở đa phần được xây dựng dựa trên OSD.
+
+Mục đích sử dụng là để đảm bảo rằng các phần mềm, mã nguồn có sử dụng giấy phép này luôn là mã nguồn mở, phù hợp với OSD.
+
+Phân loại: 
+- Những giấy phép không quy định bất kì sự hạn chế nào trong việc sử dụng mã nguồn (Giấy phép không bảo hộ): chúng không bảo vệ mã nguồn mở khỏi việc bị sử dụng trong các phần mềm không phải là mã nguồn mở.
+- Những giấy phép quy định các hạn chế trong việc sử dụng mã nguồn (Giấy phép bảo hộ): chúng bảo đảm rằng các mã nguồn mở khi được sử dụng trong bất cứ tình huống nào sẽ vẫn được công khai/miễn phí.
+
+Một số giấy phép mã nguồn mở phổ biến:
+- Giấy phép công cộng GNU (General Public License GPL) là giấy phép phần mềm tự do phổ biến nhất.
