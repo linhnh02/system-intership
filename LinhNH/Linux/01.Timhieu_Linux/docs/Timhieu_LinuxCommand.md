@@ -69,6 +69,7 @@ Ví dụ tìm những file có kí tự chứa __check__
 ![anh](/LinhNH/Linux/01.Timhieu_Linux/images/ls-lh.png)  
 
 ## 3. Lệnh pwd (print working directory)
+
 _Hiển thị đường dẫn của thư mục đang làm việc_
 
     pwd [option]
@@ -103,6 +104,66 @@ _Tạo thư mục_
 ![anh](/LinhNH/Linux/01.Timhieu_Linux/images/mkdir-v.png)
 
 
+## 5. Lệnh cat (concatenate)
+Đọc, hiển thị nội dung của file
+
+    # cat [OPTION] [FILE]
+
+5.1 Tạo ra file mới
+
+    # cat >file_name
+
+![anh](/LinhNH/Linux/01.Timhieu_Linux/images/5.1.png)
+
+5.2 Xem nội dung của file
+
+    # cat file_name
+
+![anh](/LinhNH/Linux/01.Timhieu_Linux/images/5.2.png)    
+
+5.3 Xem nội dung nhiều tệp và in ra
+
+    # cat filename1 filename2
+
+![anh](/LinhNH/Linux/01.Timhieu_Linux/images/5.3.png)   
+
+5.4 Xem nội dung của file với đánh số dòng
+
+    # cat -n file_name
+    -- n: number
+
+ ![anh](/LinhNH/Linux/01.Timhieu_Linux/images/5.4.png)   
+   
+5.5 Sao chép file
+
+    # cat file_cũ >file_mới
+
+![anh](/LinhNH/Linux/01.Timhieu_Linux/images/5.5.png)  
+
+
+5.6 Loại bỏ những dòng trống ở đầu file
+
+    # cat -s file_name
+    -- s: squeeze blank
+
+![anh](/LinhNH/Linux/01.Timhieu_Linux/images/5.6.png)  
+
+5.7 Nối nội dung các file và in ra
+
+    # cat filename1 >> filename2
+
+![anh](/LinhNH/Linux/01.Timhieu_Linux/images/5.7.png)  
+
+5.8 Thêm kí tự `$` vào cuối mỗi dòng trong file
+
+    # cat -E file_name
+    -- E: show ends
+
+![anh](/LinhNH/Linux/01.Timhieu_Linux/images/5.8.png)  
+
+
+
+
 ## 6. Lệnh rmdir (remove directory)
 _Xóa thư mục_ (Chỉ cho phép xóa thư mục rỗng)
 
@@ -110,39 +171,56 @@ _Xóa thư mục_ (Chỉ cho phép xóa thư mục rỗng)
 
 ![anh](/LinhNH/Linux/01.Timhieu_Linux/images/rmdir.png)
    
-## 7. Lệnh touch
-_Tạo file mới trống thông qua dòng lệnh_
+## 7. Lệnh rename
+7.1 Đổi đuôi tệp
 
-    # touch Tên_file
+    # rename 's/search_pattern/replacement/' *search_pattern
 
-![anh](/LinhNH/Linux/01.Timhieu_Linux/images/touch.png)
+Trong đó:
+- s là từ khóa khai báo search.
+- search_pattern là chuỗi pattern tìm kiếm.
+- replacement là chuỗi sẽ thay thế cho pattern tìm kiếm.
 
-## 8. Sao chép thư mục, tệp in 
-### 8.1. Copy nội dung 1 file vào file khác
+![anh](/LinhNH/Linux/01.Timhieu_Linux/images/7.png)
+
+7.2 Đổi kí tự 
+
+- Đổi tên file sang in hoa: rename ‘y/a-z/A-Z/’ *
+- Đổi tên file sang in thường: rename ‘y/A-Z/a-z/’ *
+- Thay thế khoẳng trắng bằng dấu gạch dưới: rename ‘y/ /_/’ *
+
+![anh](/LinhNH/Linux/01.Timhieu_Linux/images/7.1.png)
+
+
+## 8. Lệnh cp (copy)
+Sao chép thư mục, tệp in 
+8.1. Copy nội dung 1 file vào file khác
     # cp File1 File2
 
 ![anh](/LinhNH/Linux/01.Timhieu_Linux/images/8.1.png)
 
 
-### 8.2 Copy file vào thư mục khác
+8.2 Copy file vào thư mục khác
     # cp Tên_file Tên_thư_mục
 
 ![anh](/LinhNH/Linux/01.Timhieu_Linux/images/8.2.png)
 
-### 8.3 Thông báo có muốn ghi đè nội dung tập tin hay không
+8.3 Thông báo có muốn ghi đè nội dung tập tin hay không
     # cp -i test1.txt test2.txt
     -- i: inteactive (tương tác)
     // Sử dụng tùy chọn -i để nhận được thông báo xác nhận trước khi ghi đè các tệp.       
 
 ![anh](/LinhNH/Linux/01.Timhieu_Linux/images/copy-file.png)
 
-### 8.4 Xem quá trình sao chép file
+8.4 Xem quá trình sao chép file
     # cp -v Filename1 Filename2
     // -v -verbose (xem quá trình)
 
 ![anh](/LinhNH/Linux/01.Timhieu_Linux/images/8.4.png)
 
-## 9. Lệnh mv: Di chuyển tập tin và thư mục
+## 9. Lệnh mv (move)
+
+Di chuyển tập tin và thư mục
 
     # mv [OPTIONS] SOURCE DESTINATION
 
@@ -156,7 +234,9 @@ Cú pháp để di chuyển thư mục cũng giống như khi di chuyển file. 
 ![anh](/LinhNH/Linux/01.Timhieu_Linux/images/mv.png)
 
 
-## 10. Lệnh file: dùng để xác định loại tệp 
+## 10. Lệnh file
+
+Dùng để xác định loại tệp 
 
     # file [OPTIONS] [filename]
 
@@ -169,9 +249,11 @@ Hiển thị tất cả các loại file trong thư mục đang đứng
 ![anh](/LinhNH/Linux/01.Timhieu_Linux/images/10.1.png)
 
 
-## 11. Lệnh rm (remove): dùng để xóa file (hoặc thư mục)
+## 11. Lệnh rm (remove)
 
-### 11.1 Câu lệnh xóa file
+Dùng để xóa file (hoặc thư mục)
+
+11.1 Câu lệnh xóa file
     # rm Tên_file
     -- xóa 1 file
 
@@ -180,25 +262,25 @@ Hiển thị tất cả các loại file trong thư mục đang đứng
 
 ![anh](/LinhNH/Linux/01.Timhieu_Linux/images/11.1.png)
 
-### 11.2 Thông báo hỏi có muốn xóa hay không
+11.2 Thông báo hỏi có muốn xóa hay không
     # rm -i Tên_file
     -- i: interactive
 
 ![anh](/LinhNH/Linux/01.Timhieu_Linux/images/11.2.png)
 
 
-### 11.3 Tắt bỏ ràng buộc để xóa file
+11.3 Tắt bỏ ràng buộc để xóa file
 
     # rm -f Tên_file
     -- f: force
-### 11.4 Hiển thị kết quả xóa 
+11.4 Hiển thị kết quả xóa 
 
     # rm -v filename
     -- v: verbose
 
 ![anh](/LinhNH/Linux/01.Timhieu_Linux/images/rm-v.png)
 
-### 11.5 Xóa thư mục bằng lệnh rm trong Linux
+11.5 Xóa thư mục bằng lệnh rm trong Linux
 Xóa thư mục rỗng
 
     # rm -d Tên_thư_mục
@@ -212,13 +294,15 @@ Không xóa được thư mục có chứa dữ liệu (file)
 ![anh](/LinhNH/Linux/01.Timhieu_Linux/images/11.5.png)
 
 
-### 11.6 Để xóa thư mục có dữ liệu/thư mục không rỗng và tất cả các file bên trong bằng cách đệ quy thì sử dụng cú pháp:
+11.6 Để xóa thư mục có dữ liệu/thư mục không rỗng và tất cả các file bên trong bằng cách đệ quy thì sử dụng cú pháp:
     # rm -r Tên_thư_mục -- r: recursive    
 
 ![anh](/LinhNH/Linux/01.Timhieu_Linux/images/photo.png)
 
 
-## 12. Lệnh touch: lệnh này dùng để tạo 1 file trống hoặc thay đổi dấu thời gian (timestamps) của file.
+## 12. Lệnh touch
+
+Lệnh này dùng để tạo 1 file trống hoặc thay đổi dấu thời gian (timestamps) của file.
 Dấu thời gian của file có các loại sau: 
 - accesstime (thời gian truy cập: thời gian lần cuối file đọc được)
 - modifytime (thời gian của file được chỉnh sửa)
@@ -239,14 +323,14 @@ Hoặc cod thể tạo file bằng dấu ngoặc nhọn để tạo nhiều file
 ![anh](/LinhNH/Linux/01.Timhieu_Linux/images/12.png)
 
 
-### 12.1 Thay đổi thời gian truy cập file
+12.1 Thay đổi thời gian truy cập file
 
     # touch -a filename
     -- a: accesstime
 
 ![anh](/LinhNH/Linux/01.Timhieu_Linux/images/12.1.png)
 
-### 12.2 Thay đổi thời gian chỉnh sửa file 
+12.2 Thay đổi thời gian chỉnh sửa file 
 
     # touch -m filename
     -- m: modifytime
@@ -254,20 +338,20 @@ Hoặc cod thể tạo file bằng dấu ngoặc nhọn để tạo nhiều file
 ![anh](/LinhNH/Linux/01.Timhieu_Linux/images/12.2.png)
 
 
-### 12.3 Thay đổi thời gian truy cập và chỉnh sửa
+12.3 Thay đổi thời gian truy cập và chỉnh sửa
 
     # touch -am filename
 
 ![anh](/LinhNH/Linux/01.Timhieu_Linux/images/12.3.png)
 
-### 12.4 Thay đổi AccessTime mà không phải tạo file mới
+12.4 Thay đổi AccessTime mà không phải tạo file mới
 
     # touch -c filename
 
 ![anh](/LinhNH/Linux/01.Timhieu_Linux/images/12.4.png)
 
 
-### 12.5 Đặt thời gian nhất định cho thời gian truy cập và chỉnh sửa 
+12.5 Tạo 1 tệp tin với dấu thời gian nhất định hoặc thay đổi dấu thời gian của 1 tệp đã có.
 
     # touch -t Thời_Gian filename
 
@@ -283,4 +367,8 @@ Cấu trúc ngày giờ phải đúng là CCYYMMDDhhmm.ss, theo mô tả sau:
 - CC – 2 số đầu của năm
 - YY – 2 số cuối của năm
 - SS – số giây [00-59]
-  
+
+## 13. Lệnh 
+
+
+
