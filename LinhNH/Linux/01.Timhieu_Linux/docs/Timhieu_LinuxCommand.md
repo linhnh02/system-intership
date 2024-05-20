@@ -119,10 +119,10 @@ _Tạo file mới trống thông qua dòng lệnh_
 
 ## 8. Sao chép thư mục, tệp in 
 ### 8.1. Copy nội dung 1 file vào file khác
-    # cp Tên_File_Nguồn Tên_Thư_Mục_Đích
-    // Tên tệp sao chép và tệp muốn sao chép (source_file và target_file) phải khác nhau để không bị lưu đè
+    # cp File1 File2
 
-![anh](/LinhNH/Linux/01.Timhieu_Linux/images/cp.png)
+![anh](/LinhNH/Linux/01.Timhieu_Linux/images/8.1.png)
+
 
 ### 8.2 Copy file vào thư mục khác
     # cp Tên_file Tên_thư_mục
@@ -142,7 +142,7 @@ _Tạo file mới trống thông qua dòng lệnh_
 
 ![anh](/LinhNH/Linux/01.Timhieu_Linux/images/8.4.png)
 
-## 9. Lệnh mv: di chuyển file và thư mục
+## 9. Lệnh mv: Di chuyển tập tin và thư mục
 
     # mv [OPTIONS] SOURCE DESTINATION
 
@@ -154,3 +154,133 @@ Cú pháp để di chuyển thư mục cũng giống như khi di chuyển file. 
     # mv text2 text3
 
 ![anh](/LinhNH/Linux/01.Timhieu_Linux/images/mv.png)
+
+
+## 10. Lệnh file: dùng để xác định loại tệp 
+
+    # file [OPTIONS] [filename]
+
+![anh](/LinhNH/Linux/01.Timhieu_Linux/images/file.png)
+
+Hiển thị tất cả các loại file trong thư mục đang đứng
+
+    # file *
+
+![anh](/LinhNH/Linux/01.Timhieu_Linux/images/10.1.png)
+
+
+## 11. Lệnh rm (remove): dùng để xóa file (hoặc thư mục)
+
+### 11.1 Câu lệnh xóa file
+    # rm Tên_file
+    -- xóa 1 file
+
+    # rm File1 File2 File3
+    -- xóa nhiều file
+
+![anh](/LinhNH/Linux/01.Timhieu_Linux/images/11.1.png)
+
+### 11.2 Thông báo hỏi có muốn xóa hay không
+    # rm -i Tên_file
+    -- i: interactive
+
+![anh](/LinhNH/Linux/01.Timhieu_Linux/images/11.2.png)
+
+
+### 11.3 Tắt bỏ ràng buộc để xóa file
+
+    # rm -f Tên_file
+    -- f: force
+### 11.4 Hiển thị kết quả xóa 
+
+    # rm -v filename
+    -- v: verbose
+
+![anh](/LinhNH/Linux/01.Timhieu_Linux/images/rm-v.png)
+
+### 11.5 Xóa thư mục bằng lệnh rm trong Linux
+Xóa thư mục rỗng
+
+    # rm -d Tên_thư_mục
+
+Xóa thư mục rỗng
+
+![anh](/LinhNH/Linux/01.Timhieu_Linux/images/rm-folder.png)
+
+Không xóa được thư mục có chứa dữ liệu (file)
+
+![anh](/LinhNH/Linux/01.Timhieu_Linux/images/11.5.png)
+
+
+### 11.6 Để xóa thư mục có dữ liệu/thư mục không rỗng và tất cả các file bên trong bằng cách đệ quy thì sử dụng cú pháp:
+    # rm -r Tên_thư_mục -- r: recursive    
+
+![anh](/LinhNH/Linux/01.Timhieu_Linux/images/photo.png)
+
+
+## 12. Lệnh touch: lệnh này dùng để tạo 1 file trống hoặc thay đổi dấu thời gian (timestamps) của file.
+Dấu thời gian của file có các loại sau: 
+- accesstime (thời gian truy cập: thời gian lần cuối file đọc được)
+- modifytime (thời gian của file được chỉnh sửa)
+- changetime (thời gian lần cuối của file được thay đổi)
+
+Cú pháp: 
+
+    # touch [OPTIONS] File_name
+
+Tạo nhiều file cùng 1 lúc:    
+    
+    # touch filename1 filename2 filename3
+
+Hoặc cod thể tạo file bằng dấu ngoặc nhọn để tạo nhiều file như sau:
+
+    # touch filename{1..3}.txt 
+    
+![anh](/LinhNH/Linux/01.Timhieu_Linux/images/12.png)
+
+
+### 12.1 Thay đổi thời gian truy cập file
+
+    # touch -a filename
+    -- a: accesstime
+
+![anh](/LinhNH/Linux/01.Timhieu_Linux/images/12.1.png)
+
+### 12.2 Thay đổi thời gian chỉnh sửa file 
+
+    # touch -m filename
+    -- m: modifytime
+
+![anh](/LinhNH/Linux/01.Timhieu_Linux/images/12.2.png)
+
+
+### 12.3 Thay đổi thời gian truy cập và chỉnh sửa
+
+    # touch -am filename
+
+![anh](/LinhNH/Linux/01.Timhieu_Linux/images/12.3.png)
+
+### 12.4 Thay đổi AccessTime mà không phải tạo file mới
+
+    # touch -c filename
+
+![anh](/LinhNH/Linux/01.Timhieu_Linux/images/12.4.png)
+
+
+### 12.5 Đặt thời gian nhất định cho thời gian truy cập và chỉnh sửa 
+
+    # touch -t Thời_Gian filename
+
+![anh](/LinhNH/Linux/01.Timhieu_Linux/images/12.5.png)
+
+
+Cấu trúc ngày giờ phải đúng là CCYYMMDDhhmm.ss, theo mô tả sau:
+
+- MM – tháng trong năm [01-12]
+- DD – ngày trong tháng [01-31]
+- hh – giờ của ngày [00-23]
+- mm – phút [00-59]
+- CC – 2 số đầu của năm
+- YY – 2 số cuối của năm
+- SS – số giây [00-59]
+  
